@@ -20,12 +20,12 @@ foreach($rs as $item)
 	
 }
 
-$_SESSION['LoginID'] = 'etho';
+$userid = $_SESSION['loginID'];
 
 if(isset($submit)){
 	$t=time();
 	
-	$filename = date("ymdHis",$t).$_SESSION['LoginID'].".html";
+	$filename = date("ymdHis",$t).$_SESSION['loginID'].".html";
 	$path = "/var/www/html/i4010/ttt/files/";
 	$path = $path.$filename;
 	$file = fopen($path,"w+");
@@ -37,7 +37,7 @@ if(isset($submit)){
 	$textfield = ereg_replace("\n", "<BR>\n", $textfield);
 	//$sql="INSERT INTO 'note' (userid, content, typeid) VALUES('10','$textfield','')";
 	$sql='INSERT INTO `note` (userid,content,typeid,time)'
-                 ."VALUES ('100','$filename','$typeid','$addTime')";
+                 ."VALUES ('$userid','$filename','$typeid','$addTime')";
 	$result = updatedb($sql, $db_conn);
 
 	//echo $sql;
@@ -60,13 +60,13 @@ body {
 	background-position:center;
 	background-size:90% 90%;
 	background-color: #F8F8D2;
-	background-image: url(./PIC/nobutton/U_newnote/U_newnote.JPG);
+	background-image: url(./newnote_header.JPG);
 	background-repeat: no-repeat;
 }
 </style>
 </head>
 <body>
-<button onClick="self.location.href='./home.php'" style="position: absolute; top: 10%; left:80%; width: 15%; height: 5%;"><img src= "./PIC/button/home.JPG"; width=100%; height=100%;></button>
+<button onClick="self.location.href='./home.html'" style="position: absolute; top: 10%; left:80%; width: 15%; height: 5%;"><img src= "./PIC/button/home.JPG"; width=100%; height=100%;></button>
 <br>
 <button onClick="self.location.href='./list.php'" style="position:absolute; top:20%; left:80%; width: 15%; height: 5%;"><img src= "./PIC/button/notelist.JPG"; width=100%; height=100%;></button>
 <br>

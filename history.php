@@ -18,18 +18,16 @@ body {
 </style>
 </head>
 <body>
-<iframe style="position:fixed;top:30%;left:20%;width:60%;height:50%">
+<iframe src="History_in.php" style="position:fixed;top:30%;left:20%;width:60%;height:50%">
 <html>
 <head></>
-<h1>hellow Html</h1>
 </html>
 </iframe>
-
 <button onClick="self.location.href='./home.php'" style="position: absolute; top: 10%; left:80%; width: 15%; height: 5%;"><img src= "./PIC/button/home.JPG"; width=100%; height=100%;></button>
 <br>
 <button onClick="self.location.href='./list.php'" style="position:absolute; top:20%; left:80%;  -webkit-transform:rotate(-8deg);  width: 15%; height: 5%;"><img src= "./PIC/button_green/G_notelist.JPG"; width=100%; height=100%;></button>
 <br>
 <button onClick="self.location.href='./post_edit.php'" style="position:absolute; top:30%; left:80%;  width=20%; height=10%; width: 15%; height: 5%; "><img src= "./PIC/button/new note.JPG"; width=100%; height=100%;></button>
-<button onClick="self.location.href='./unlogin_home.php'" style="position:absolute; top:40%; left:80%; width=20%; height=10%; width: 15%; height: 5%; "><img src= "./PIC/button/logout.JPG"; width=100%; height=100%;></button>
+<button onClick="self.location.href='./logout.php'" style="position:absolute; top:40%; left:80%; width=20%; height=10%; width: 15%; height: 5%; "><img src= "./PIC/button/logout.JPG"; width=100%; height=100%;></button>
 </body>
 </html>

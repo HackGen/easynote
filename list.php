@@ -25,7 +25,7 @@ body {
 }
 </style>
 </head>
-<button onClick="self.location.href='./home.php'" style="position: absolute; top: 10%; left:80%; width: 15%; height: 5%;"><img src= "./PIC/button/home.JPG"; width=100%; height=100%;></button>
+<button onClick="self.location.href='./home.html'" style="position: absolute; top: 10%; left:80%; width: 15%; height: 5%;"><img src= "./PIC/button/home.JPG"; width=100%; height=100%;></button>
 <br>
 <button onClick="self.location.href=''" style="position:absolute; top:20%; left:80%;  -webkit-transform:rotate(-8deg);  width: 15%; height: 5%;"><img src= "./PIC/button_green/G_notelist.JPG"; width=100%; height=100%;></button>
 <br>
